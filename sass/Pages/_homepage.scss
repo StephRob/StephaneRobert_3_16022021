@@ -1,7 +1,7 @@
 .location {
   @include flex-center-baseline;
   background-color: #eaeaea;
-  
+
   &__icon {
     font-size: large;
   }
@@ -9,5 +9,15 @@
   &__name {
     font-weight: 600;
     margin-left: 1rem;
+  }
+}
+
+.presentation {
+  padding: 2rem;
+  text-align: center;
+  background-color: $color-background;
+
+  &__title {
+    margin: 0;
   }
 }
