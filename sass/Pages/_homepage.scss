@@ -18,6 +18,70 @@
   background-color: $color-background;
 
   &__title {
-    margin: 0;
+    margin: $margin-title;
+  }
+}
+
+.steps {
+  padding: $padding-glogal;
+  @include desktop-only;
+
+  &__title {
+    margin: $margin-title;
+  }
+
+  &__order {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+  }
+
+  .step {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0 0 1.5rem .5rem;
+    width: 100%;
+    background-color: $color-background;
+    border-radius: 1.2rem;
+    box-shadow: 0px 2px 10px 0 rgb(0 0 0 / 20%);
+    transition: all .2s ease;
+
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
+      width: 30%;
+    }
+
+    &:hover {
+      background-color: lighten($color-primary, 35%);
+    }
+
+    &:hover .step__icon {
+      color: $color-primary;
+    }
+
+    &__number {
+      @include flex-center-center;
+      position: absolute;
+      bottom: 50%;
+      transform: translateY(50%);
+      left: -10px;
+      background-color: $color-primary;
+      color: $color-text;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+    }
+
+    &__icon {
+      margin: 0 2rem;
+      font-size: 1.3rem;
+      color: #7e7e7e;
+    }
+
+    &__name {
+      margin: 1.5rem 0;
+      font-weight: bold;
+    }
   }
 }

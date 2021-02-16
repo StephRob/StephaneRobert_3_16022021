@@ -3,6 +3,14 @@ $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tiertiary: #99E2D0;
 $color-background: #f6f6f6;
+$color-text: #fff;
 
 /***** PADDING / MARGIN *****/
-$padding-glogal: 2.5rem 1rem;
+$padding-glogal: 2.5rem 1.5rem;
+$margin-title: 0;
+
+/***** BREAKPOINTS *****/
+$breakpoints: (
+  tablet: 980px,
+  desktop: 1024px
+  );

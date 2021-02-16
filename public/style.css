@@ -1,5 +1,6 @@
 /***** COLORS *****/
 /***** PADDING / MARGIN *****/
+/***** BREAKPOINTS *****/
 * {
   box-sizing: border-box;
 }
@@ -26,7 +27,7 @@ h1 {
 .btn {
   font-size: 1rem;
   font-weight: 500;
-  color: white;
+  color: #fff;
   margin: 0.7rem 0;
   padding: 1rem;
   border-radius: 2rem;
@@ -71,6 +72,70 @@ h1 {
 }
 .presentation__title {
   margin: 0;
+}
+
+.steps {
+  padding: 2.5rem 1.5rem;
+}
+@media screen and (min-width: 1024px) {
+  .steps {
+    max-width: 1100px;
+    margin: auto;
+  }
+}
+.steps__title {
+  margin: 0;
+}
+.steps__order {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+.steps .step {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 0 0 1.5rem 0.5rem;
+  width: 100%;
+  background-color: #f6f6f6;
+  border-radius: 1.2rem;
+  box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+}
+@media screen and (min-width: 980px) {
+  .steps .step {
+    width: 30%;
+  }
+}
+.steps .step:hover {
+  background-color: #f2eafb;
+}
+.steps .step:hover .step__icon {
+  color: #9356DC;
+}
+.steps .step__number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(50%);
+  left: -10px;
+  background-color: #9356DC;
+  color: #fff;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+}
+.steps .step__icon {
+  margin: 0 2rem;
+  font-size: 1.3rem;
+  color: #7e7e7e;
+}
+.steps .step__name {
+  margin: 1.5rem 0;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */
