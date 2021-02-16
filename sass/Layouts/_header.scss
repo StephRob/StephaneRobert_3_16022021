@@ -1,0 +1,5 @@
+.header {
+  @include flex-center-center;
+  padding: .5rem;
+  box-shadow: 0 4px 30px 0 rgb(50 39 73 / 20%);
+}

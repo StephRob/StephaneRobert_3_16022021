@@ -1,1 +1,5 @@
-@import "./Base/base"
+@import "./Utils/variables";
+@import "./Utils/mixins.scss";
+@import "./Base/base";
+@import "./Base/typography";
+@import "./Layouts/header"
