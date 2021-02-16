@@ -1,5 +1,6 @@
 .header {
   @include flex-center-center;
+  position: relative;
   padding: .5rem;
-  box-shadow: 0 4px 30px 0 rgb(50 39 73 / 20%);
+  box-shadow: 0px 0px 10px 0 rgb(0 0 0 / 20%);
 }
