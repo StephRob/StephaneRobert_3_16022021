@@ -1,0 +1,39 @@
+.footer {
+  background-color: $color-footer-background;
+  color: $color-text;
+
+  &__container {
+    padding: $padding-glogal;
+    @include desktop-only;
+
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+      ul {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    li {
+      margin-bottom: .3rem;
+    }
+
+    a {
+      color: $color-text;
+      transition: .2s;
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+
+    i {
+      margin-right: .5rem;
+      font-size: small;
+    }
+  }
+
+  &__title {
+    margin: 0 0 1rem 0;
+    font-weight: lighter;
+  }
+}
