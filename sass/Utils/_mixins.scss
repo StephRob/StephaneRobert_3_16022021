@@ -16,9 +16,12 @@
   overflow: hidden;
 }
 
+@mixin loader-spinner($loader-delay) {
+  animation: loader-spinner .8s ease-in $loader-delay infinite both;
+}
+
 @mixin menu-animation($delay) {
     animation: menu-appears .5s ease-out $delay both;
-
 }
 
 @mixin desktop-only {
