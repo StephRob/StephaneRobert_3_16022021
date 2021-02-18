@@ -10,6 +10,12 @@
   align-items: baseline;
 }
 
+@mixin ellipsis-text {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
 @mixin desktop-only {
   @media screen and (min-width: map-get($breakpoints, desktop)) {
     max-width: 1100px;
