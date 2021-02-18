@@ -16,9 +16,14 @@
   overflow: hidden;
 }
 
+@mixin menu-animation($delay) {
+    animation: menu-appears .5s ease-out $delay both;
+
+}
+
 @mixin desktop-only {
   @media screen and (min-width: map-get($breakpoints, desktop)) {
-    max-width: 1100px;
+    max-width: 1230px;
     margin: auto;
   }
 }

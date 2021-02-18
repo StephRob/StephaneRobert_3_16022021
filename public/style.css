@@ -1,6 +1,16 @@
 /***** COLORS *****/
 /***** PADDING / MARGIN *****/
 /***** BREAKPOINTS *****/
+@keyframes menu-appears {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -177,7 +187,7 @@ h1,
 }
 @media screen and (min-width: 1024px) {
   .header-container {
-    max-width: 1100px;
+    max-width: 1230px;
     margin: auto;
   }
 }
@@ -199,7 +209,7 @@ h1,
 }
 @media screen and (min-width: 1024px) {
   .footer__container {
-    max-width: 1100px;
+    max-width: 1230px;
     margin: auto;
   }
 }
@@ -256,7 +266,7 @@ h1,
 }
 @media screen and (min-width: 1024px) {
   .steps {
-    max-width: 1100px;
+    max-width: 1230px;
     margin: auto;
   }
 }
@@ -324,7 +334,7 @@ h1,
 }
 @media screen and (min-width: 1024px) {
   .restaurant {
-    max-width: 1100px;
+    max-width: 1230px;
     margin: auto;
   }
 }
@@ -340,7 +350,7 @@ h1,
 .menu {
   position: relative;
   margin: -5rem auto 0;
-  max-width: 1100px;
+  max-width: 1230px;
   border-top-left-radius: 3rem;
   border-top-right-radius: 3rem;
   z-index: 2;
@@ -373,10 +383,16 @@ h1,
 .menu__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .menu__list .menu-section {
   width: 100%;
   margin-top: 1.5rem;
+}
+@media screen and (min-width: 1024px) {
+  .menu__list .menu-section {
+    width: 32%;
+  }
 }
 .menu__list .menu-section__title {
   margin: 0.5rem 0;
@@ -397,6 +413,7 @@ h1,
   padding: 0.8rem 1rem;
   margin-bottom: 1rem;
   border-radius: 1.2rem;
+  opacity: 0;
   box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease;
   overflow: hidden;
@@ -452,6 +469,33 @@ h1,
   color: #fff;
   transform: rotate(0);
   transition: 0.3s 0.05s;
+}
+.menu__list .menu-section__details .item-1 {
+  animation: menu-appears 0.5s ease-out 0s both;
+}
+.menu__list .menu-section__details .item-2 {
+  animation: menu-appears 0.5s ease-out 0.1s both;
+}
+.menu__list .menu-section__details .item-3 {
+  animation: menu-appears 0.5s ease-out 0.2s both;
+}
+.menu__list .menu-section__details .item-4 {
+  animation: menu-appears 0.5s ease-out 0.3s both;
+}
+.menu__list .menu-section__details .item-5 {
+  animation: menu-appears 0.5s ease-out 0.4s both;
+}
+.menu__list .menu-section__details .item-6 {
+  animation: menu-appears 0.5s ease-out 0.5s both;
+}
+.menu__list .menu-section__details .item-7 {
+  animation: menu-appears 0.5s ease-out 0.6s both;
+}
+.menu__list .menu-section__details .item-8 {
+  animation: menu-appears 0.5s ease-out 0.7s both;
+}
+.menu__list .menu-section__details .item-9 {
+  animation: menu-appears 0.5s ease-out 0.8s both;
 }
 
 /*# sourceMappingURL=style.css.map */
