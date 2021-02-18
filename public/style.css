@@ -479,6 +479,9 @@ h1,
 .menu__list .menu-section__details .item-3 {
   animation: menu-appears 0.5s ease-out 0.2s both;
 }
+.menu__list .menu-section__details .item-3bis {
+  animation: menu-appears 0.5s ease-out 0.25s both;
+}
 .menu__list .menu-section__details .item-4 {
   animation: menu-appears 0.5s ease-out 0.3s both;
 }

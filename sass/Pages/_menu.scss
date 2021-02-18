@@ -145,6 +145,10 @@
           @include menu-animation(0.2s);
         }
 
+        .item-3bis {
+          @include menu-animation(0.25s);
+        }
+
         .item-4 {
           @include menu-animation(0.3s);
         }
