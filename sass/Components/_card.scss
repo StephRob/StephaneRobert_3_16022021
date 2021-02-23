@@ -18,7 +18,7 @@
     position: absolute;
     right: 1rem;
     top: 1rem;
-    padding: .3rem .6rem;
+    padding: .375rem .625rem;
     font-weight: 500;
     color: $color-chip;
     background-color: $color-chip-background;
@@ -26,13 +26,12 @@
   }
 
   &__link {
-    display: flex;
-    flex-direction: column;
+    @include flexbox(column);
     height: 14rem;
     border-radius: 1.5rem;
-    background-color: #ffffff;
+    background-color: $color-card-background;
     text-decoration: none;
-    color: #000000;
+    color: $color-font-black;
   }
 
   &__img {
@@ -47,9 +46,7 @@
   }
 
   &__description {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flexbox(column, center);
     position: relative;
     height: 30%;
     padding: .5rem 1rem;
@@ -59,7 +56,7 @@
     }
 
     p{
-      margin: $margin-title;
+      margin: 0;
     }
   }
 

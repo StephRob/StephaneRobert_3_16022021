@@ -12,9 +12,11 @@
   }
 
   &__title {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flexbox(initial, space-between, center);
+
+    h2 {
+      font-size: 1.7rem;
+    }
   }
 
   &__icon {
@@ -31,16 +33,10 @@
   &__order {
     padding: 1rem 0;
     text-align: center;
-
-    .btn {
-      padding: 1rem 3rem;
-    }
   }
 
   &__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    @include flexbox(initial, space-between, initial, wrap);
 
     .menu-section {
       width: 100%;
@@ -54,6 +50,7 @@
         margin: .5rem 0;
         font-size: 1rem;
         font-weight: lighter;
+
       }
 
       &__underline {
@@ -67,8 +64,8 @@
         margin: 1rem 0;
 
         .detail-card {
-          display: flex;
-          padding: .8rem 1rem;
+          @include flexbox;
+          padding: 1rem;
           margin-bottom: 1rem;
           border-radius: 1.2rem;
           opacity: 0;
@@ -105,9 +102,7 @@
           }
 
           &__price {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
+            @include flexbox(column, flex-end);
             margin: 0 1rem;
             
             span {
@@ -116,9 +111,7 @@
           }
 
           &__validation {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flexbox(initial, center, center);
             margin: -1rem -6rem -1rem 0;
             width: 5rem;
             background-color: $color-tiertiary;
@@ -126,7 +119,7 @@
 
             .check-icon {
               font-size: 1.7rem;
-              color: $color-text;
+              color: $color-font-white;
               transform: rotate(0);
               transition: .3s .05s;
             }

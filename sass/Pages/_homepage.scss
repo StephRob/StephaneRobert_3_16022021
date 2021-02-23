@@ -1,6 +1,6 @@
 .location {
-  @include flex-center-baseline;
-  background-color: #eaeaea;
+  @include flexbox(initial, center, baseline);
+  background-color: $color-location-background;
 
   &__icon {
     font-size: large;
@@ -18,28 +18,25 @@
   background-color: $color-background;
 
   &__title {
-    margin: $margin-title;
+    margin: 0;
   }
 }
 
 .steps {
-  padding: $padding-glogal;
+  padding: $p-container;
   @include desktop-only;
 
   &__title {
-    margin: $margin-title;
+    margin: 0;
   }
 
   &__order {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    @include flexbox(initial, space-between, initial, wrap);
     margin: 2rem 0;
   }
 
   .step {
-    display: flex;
-    align-items: center;
+    @include flexbox(initial, initial, center);
     position: relative;
     margin: 0 0 1.5rem .5rem;
     width: 100%;
@@ -61,13 +58,13 @@
     }
 
     &__number {
-      @include flex-center-center;
+      @include flexbox(initial, center, center);
       position: absolute;
       bottom: 50%;
       transform: translateY(50%);
       left: -10px;
       background-color: $color-primary;
-      color: $color-text;
+      color: $color-font-white;
       width: 1.5rem;
       height: 1.5rem;
       border-radius: 50%;
@@ -76,7 +73,7 @@
     &__icon {
       margin: 0 2rem;
       font-size: 1.3rem;
-      color: #7e7e7e;
+      color: $color-icon-step;
     }
 
     &__name {
@@ -91,16 +88,14 @@
 }
 
 .restaurant {
-  padding: $padding-glogal;
+  padding: $p-container;
   @include desktop-only;
 
   &__title {
-    margin: $margin-title;
+    margin: 0;
   }
 
   &__cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    @include flexbox(initial, space-between, initial, wrap);
   }
 }

@@ -1,15 +1,14 @@
 .footer {
   background-color: $color-footer-background;
-  color: $color-text;
+  color: $color-font-white;
 
   &__container {
-    padding: $padding-glogal;
+    padding: $p-container;
     @include desktop-only;
 
     @media screen and (min-width: map-get($breakpoints, desktop)) {
       ul {
-        display: flex;
-        justify-content: space-between;
+        @include flexbox(initial, space-between);
       }
     }
 
@@ -18,7 +17,7 @@
     }
 
     a {
-      color: $color-text;
+      color: $color-font-white;
       transition: .2s;
 
       &:hover {

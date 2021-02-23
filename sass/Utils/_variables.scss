@@ -3,15 +3,17 @@ $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tiertiary: #99E2D0;
 $color-background: #f6f6f6;
-$color-text: #fff;
+$color-font-white: #fff;
+$color-font-black: #000;
+$color-icon-step: #7e7e7e;
 $color-chip: #008766;
 $color-chip-background: #99e2d0;
 $color-footer-background: #353535;
+$color-card-background: #fff;
+$color-location-background: #eaeaea;
 
-
-/***** PADDING / MARGIN *****/
-$padding-glogal: 2.5rem 1.5rem;
-$margin-title: 0;
+/***** PADDING *****/
+$p-container: 2.5rem 1.5rem;
 
 /***** BREAKPOINTS *****/
 $breakpoints: (
