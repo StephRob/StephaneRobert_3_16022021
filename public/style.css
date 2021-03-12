@@ -42,7 +42,7 @@
   animation: loader-disappear 0.1s 3s both;
 }
 .loader__text {
-  font-size: 1.5rem;
+  font-size: 3rem;
   color: #fff;
 }
 .loader__spinner {
@@ -101,6 +101,7 @@ Body, .btn {
 }
 
 h1,
+.loader__text,
 .menu h2,
 .footer__title {
   font-family: "Shrikhand", cursive;
@@ -330,6 +331,9 @@ h1,
 }
 .presentation__title {
   margin: 0;
+}
+.presentation a {
+  display: inline-block;
 }
 
 .steps {
