@@ -87,7 +87,7 @@
         visibility: hidden;
         opacity: 0;
         background: linear-gradient(50deg, $color-secondary, $color-primary);
-        background-clip: text;
+        background-clip: initial;
         -webkit-background-clip: text;
         color: transparent;
         transition: visibility 0.1s, opacity 0.3s ease;
